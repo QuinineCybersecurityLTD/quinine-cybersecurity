@@ -1,0 +1,7 @@
+# Burp IDOR reproduction (curl stands in for intercept+modify)
+## legit (own account 1001):
+{"id": "1001", "owner": "demo-user", "name": "Demo User", "balance": 42.0}
+## tampered id=1002 (Alice):
+{"id": "1002", "owner": "alice", "name": "Alice Admin", "balance": 98230.55}
+## tampered id=1003 (Bob):
+{"id": "1003", "owner": "bob", "name": "Bob CFO", "balance": 1500000.0}
